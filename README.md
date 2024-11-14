@@ -16,35 +16,31 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
     npx expo start
    ```
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+# Coding Scenario - React Native Expo
+### You have about 30 mins to go through the below tasks. 
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Setup
+Setup: Create two additional folders – one named components and another called pages. You may add additional folders if necessary. Setup a page called Home, that will be loaded up when you first start the application.
 
-## Get a fresh project
-
-When you're ready, run:
+## 1.	State: In the Home screen, render the text 
 
 ```bash
-npm run reset-project
+Hello World - Press me to toggle
 ```
+	a. When pressed, the text should toggle between CAPITALISED and lower case. This functionality will only be used on this screen.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+## 2. Resusable Components:  
+### Build a very simple reusable container component, that will resize based off the width of the screen. 
+### Place this container into the page created
+	a.	Full screen should take up 75% window space; mobile should take up 100% space.
+	The container should also have 14px vertical and horizontal padding when resized to mobile width
+	b.	The container should allow children to be rendered inside of it.
+	c.	This container can be bordered, or not bordered, depending on the property passed into it.
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 3. Functions/Hooks: Create a text button inside of this container that will do the following:
+	a. when pressed, will grab the user’s Platform information (“iOS, Android, or Web”)
+	b.	return this in a console log to the user. 
+	c.	Note: This function may be used in multiple places in the app.
+	d. Name the Text/Button "Get Platform Details
